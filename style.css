@@ -134,10 +134,10 @@ header{background:#111;color:#fff;position:sticky;top:0;z-index:40}
 
 /* WHATSAPP FLOTANTE */
 .wa-float{position:fixed;right:18px;bottom:18px;z-index:200}
-.wa-float img{width:90px;height:90px;border-radius:50%;box-shadow:0 10px 24px rgba(0,0,0,.2)}
+.wa-float img{width:56px;height:56px;border-radius:50%;box-shadow:0 10px 24px rgba(0,0,0,.2)}
 
 /* RESPONSIVE */
-@media (max-width: 900px){
+@media (max-width: 480px){
   .hero-inner{flex-direction:column;text-align:center}
   .hero-media img{max-width:420px}
   .nav{display:none}
@@ -211,8 +211,8 @@ header{background:#111;color:#fff;position:sticky;top:0;z-index:40}
 }
 
 .social-links img {
-  width: 64px;          /* 🔹 Aumenta el tamaño del icono */
-  height: 64px;
+  width: 74px;          /* 🔹 Aumenta el tamaño del icono */
+  height: 74px;
   object-fit: contain;
   filter: none;         /* 🔹 Muestra los colores originales */
   transition: transform 0.3s ease, opacity 0.3s ease;
@@ -451,7 +451,7 @@ body.trabajos h2 {
 body.trabajos {
   background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('imagenes/fondo-trabajos.jpg');
+    url('https://res.cloudinary.com/dvj93tvu6/image/upload/v1761133044/liquido-rosado-salpicaduras-remolino-olas-gotas-dispersas-royalty-alta-calidad-libre-stock-pintura_1141694-208_cdg5ct.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
