@@ -6,70 +6,74 @@
   <title>Rotulación Creativa — Inicio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body class="inicio">
 
-  <!-- HEADER -->
+  <!-- ===============================
+       HEADER
+  ================================ -->
   <header>
-  <div class="header-top">
-    <p class="contacto-header">
-      Rotulación Creativa | Contacto:
-      <a href="https://wa.me/34652018096" target="_blank" title="WhatsApp">
-        <img src="https://res.cloudinary.com/dvj93tvu6/image/upload/v1761132981/whatsapp_logo_icon_181644_ssftsu.png" alt="WhatsApp" />
+    <!-- Franja superior de contacto -->
+    <div class="header-top">
+      <p class="contacto-header">
+        Rotulación Creativa | Contacto:
+        <a href="https://wa.me/34652018096" target="_blank" title="WhatsApp" aria-label="WhatsApp">
+          <img src="imagenes/whatsapp_logo_icon_181644.png" alt="WhatsApp" />
+        </a>
+        ✉️ <a href="mailto:rotulosok@hotmail.com">rotulosok@hotmail.com</a>
+      </p>
+    </div>
+
+    <!-- Logo y menú -->
+    <div class="header-inner centered-header">
+      <a href="index.html" class="brand">
+        <img src="imagenes/Logo_chico_web copia.png" alt="Rotulación Creativa" class="logo-desktop" />
       </a>
-      ✉️ rotulosok@hotmail.com
-    </p>
-  </div>
 
-  <div class="header-inner centered-header">
-    <a href="index.html" class="brand">
-      <img src="https://res.cloudinary.com/dvj93tvu6/image/upload/v1761133045/Logo_chico_web_copia_knfswy.png" alt="Rotulación Creativa" class="logo-desktop">
-    </a>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
-    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <nav id="main-nav" class="nav">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="trabajos.html">Trabajos</a>
+        <a href="productos.html">Productos y Servicios</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
 
-    <nav id="main-nav" class="nav">
-      <a href="index.html">Inicio</a>
-      <a href="sobre-nosotros.html">Sobre Nosotros</a>
-      <a href="trabajos.html">Trabajos</a>
-      <a href="productos.html">Productos y Servicios</a>
-      <a href="ofertas.html">Ofertas</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </div>
-</header>
-
-
-  <!-- HERO -->
+  <!-- ===============================
+       HERO
+  ================================ -->
   <section id="inicio" class="hero">
     <div class="hero-inner">
       <div class="hero-text">
-        <h1>Diseños que iluminan tu marca</h1>
+        <h1>DISEÑOS QUE ILUMINAN TU MARCA</h1>
         <p>Especialistas en rótulos, vinilos y rotulación profesional.</p>
-        <a href="#contacto" class="btn">Pide presupuesto</a>
-      </div>
-      <div class="hero-media">
-        <img src="imagenes/hero.jpg" alt="Rotulación ejemplo">
+        <a href="contacto.html" class="btn">Pide presupuesto</a>
       </div>
     </div>
   </section>
 
-  <!-- PRODUCTOS Y SERVICIOS -->
+  <!-- ===============================
+       PRODUCTOS Y SERVICIOS
+  ================================ -->
   <section id="servicios" class="section servicios">
     <div class="wrap">
       <h2>Productos y Servicios</h2>
       <div class="cards">
         <article class="card">
-          <img src="https://res.cloudinary.com/dvj93tvu6/image/upload/v1761133129/Corporeo_6_thnevg.jpg" alt="">
+          <img src="imagenes/Corporeo (6).jpg" alt="Rótulos luminosos" />
           <h3>Rótulos luminosos</h3>
           <p>Fabricación e instalación de rótulos a medida.</p>
         </article>
         <article class="card">
-          <img src="https://res.cloudinary.com/dvj93tvu6/image/upload/v1761133045/Vinilo_impreso_1_mhz7qs.jpg" alt="">
+          <img src="imagenes/Vinilo_impreso (1).jpg" alt="Vinilos e impresión" />
           <h3>Vinilos e impresión</h3>
           <p>Vinilos para escaparates, vehículos y señalética.</p>
         </article>
         <article class="card">
-          <img src="https://res.cloudinary.com/dvj93tvu6/image/upload/v1761133129/Estampafo_textil_1_ih924z.jpg" alt="">
+          <img src="imagenes/Estampafo textil (1).jpeg" alt="Impresión textil" />
           <h3>Impresión textil</h3>
           <p>Estampado textil DTF.</p>
         </article>
@@ -77,19 +81,21 @@
     </div>
   </section>
 
-  <!-- OFERTAS -->
+  <!-- ===============================
+       OFERTAS
+  ================================ -->
   <section id="ofertas" class="section ofertas">
     <div class="wrap">
       <h2>Ofertas</h2>
       <div class="productos">
         <div class="producto">
-          <img src="imagenes/prod1.jpg" alt="">
+          <img src="imagenes/prod1.jpg" alt="Vinilo para escaparate" />
           <h3>Vinilo para escaparate</h3>
           <p>Desde 35€ — personalizados</p>
           <button onclick="comprar('Vinilo para escaparate')">Pedir info</button>
         </div>
         <div class="producto">
-          <img src="imagenes/prod2.jpg" alt="">
+          <img src="imagenes/prod2.jpg" alt="Rótulo exterior" />
           <h3>Rótulo exterior</h3>
           <p>Fabricación a medida</p>
           <button onclick="comprar('Rótulo exterior')">Pedir info</button>
@@ -98,32 +104,36 @@
     </div>
   </section>
 
-     <!-- CONTACTO / FOOTER -->
+  <!-- ===============================
+       FOOTER / CONTACTO
+  ================================ -->
   <footer>
-  <div class="footer-wrap">
-    <h2>Contacto</h2>
-    <p>📞 <strong>652 018096</strong></p>
-    <p>✉️ <a href="mailto:rotulosok@hotmail.com">rotulosok@hotmail.com</a></p>
+    <div class="footer-wrap">
+      <h2>Contacto</h2>
+      <p>📞 <strong>652 018096</strong></p>
+      <p>✉️ <a href="mailto:rotulosok@hotmail.com">rotulosok@hotmail.com</a></p>
 
-    <div class="social-links">
-      <a href="https://www.instagram.com/rotulosok" target="_blank" aria-label="Instagram">
-        <img src="https://res.cloudinary.com/dvj93tvu6/image/upload/v1761133044/instagram_x35zmh.png" alt="Instagram">
-      </a>
-      <a href="https://www.facebook.com/rotulosok" target="_blank" aria-label="Facebook">
-        <img src="https://res.cloudinary.com/dvj93tvu6/image/upload/v1761133097/facebook_dftxip.png" alt="Facebook">
-      </a>
+      <div class="social-links">
+        <a href="https://www.instagram.com/rotulosok" target="_blank" aria-label="Instagram">
+          <img src="imagenes/instagram.png" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/rotulosok" target="_blank" aria-label="Facebook">
+          <img src="imagenes/facebook.png" alt="Facebook" />
+        </a>
+      </div>
+
+      <p class="rights">© 2025 Rotulación Creativa. Todos los derechos reservados.</p>
     </div>
+  </footer>
 
-    <p class="rights">© 2025 Rotulación Creativa. Todos los derechos reservados.</p>
-  </div>
-</footer>
-
-  <!-- BOTÓN WHATSAPP FLOTANTE (en todas las páginas) -->
-  <a class="wa-float" 
-     href="https://wa.me/34652018096?text=Hola%20quiero%20información" 
-     target="_blank" 
+  <!-- ===============================
+       BOTÓN WHATSAPP FLOTANTE
+  ================================ -->
+  <a class="wa-float"
+     href="https://wa.me/34652018096?text=Hola%20quiero%20información"
+     target="_blank"
      aria-label="WhatsApp">
-    <img src="https://res.cloudinary.com/dvj93tvu6/image/upload/v1761132981/whatsapp_logo_icon_181644_ssftsu.png" alt="WhatsApp">
+    <img src="imagenes/whatsapp_logo_icon_181644.png" alt="WhatsApp" />
   </a>
 
   <script src="script.js"></script>

@@ -6,10 +6,21 @@
   <title>Trabajos — Rotulación Creativa</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="trabajos">
 
   <!-- HEADER -->
   <header>
+    <div class="header-top">
+      <p class="contacto-header">
+        Rotulación Creativa | Contacto:
+        <a href="https://wa.me/34652018096" target="_blank" title="WhatsApp">
+          <img src="imagenes/whatsapp_logo_icon_181644.png" alt="WhatsApp" />
+        </a>
+        ✉️ rotulosok@hotmail.com
+      </p>
+    </div>
+
     <div class="header-inner">
       <a href="index.html" class="brand">
         <img src="imagenes/Logo_chico_web copia.png" alt="Rotulación Creativa" class="logo-desktop">
@@ -18,21 +29,22 @@
       <button class="menu-toggle" aria-label="Abrir menú">☰</button>
 
       <nav id="main-nav" class="nav">
-  <a href="index.html">Inicio</a>
-  <a href="sobre-nosotros.html">Sobre Nosotros</a>
-  <a href="trabajos.html">Trabajos</a>
-  <a href="productos.html">Productos y Servicios</a>
-  <a href="ofertas.html">Ofertas</a>
-  <a href="contacto.html">Contacto</a>
-</nav>
+        <a href="index.html">Inicio</a>
+        <a href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a href="trabajos.html" class="active">Trabajos</a>
+        <a href="productos.html">Productos y Servicios</a>
+        <a href="ofertas.html">Ofertas</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
     </div>
   </header>
 
-  <!-- GALERÍA DE TRABAJOS -->
-  <section class="section trabajos">
+  <!-- SECCIÓN DE TRABAJOS -->
+  <section class="trabajos-seccion">
     <div class="wrap">
       <h1>Nuestros Trabajos</h1>
       <p>Una selección de proyectos realizados para nuestros clientes. Calidad, detalle y creatividad en cada pieza.</p>
+      
       <div class="galeria">
         <img src="imagenes/Fachada (2).jpg" alt="Trabajo 1">
         <img src="imagenes/Furgo (1).jpeg" alt="Trabajo 2">
@@ -45,33 +57,31 @@
   </section>
 
   <!-- FOOTER -->
-<footer>
-  <div class="footer-wrap">
-    <h2>Contacto</h2>
-    <p>📞 <strong>652 018096</strong></p>
-    <p>✉️ <a href="mailto:rotulosok@hotmail.com">rotulosok@hotmail.com</a></p>
+  <footer>
+    <div class="footer-wrap">
+      <h2>Contacto</h2>
+      <p>📞 <strong>652 018096</strong></p>
+      <p>✉️ <a href="mailto:rotulosok@hotmail.com">rotulosok@hotmail.com</a></p>
 
-    <div class="social-links">
-      <a href="https://www.instagram.com/rotulosok" target="_blank" aria-label="Instagram">
-        <img src="imagenes/instagram.png" alt="Instagram">
-      </a>
-      <a href="https://www.facebook.com/rotulosok" target="_blank" aria-label="Facebook">
-        <img src="imagenes/facebook.png" alt="Facebook">
-      </a>
+      <div class="social-links">
+        <a href="https://www.instagram.com/rotulosok" target="_blank" aria-label="Instagram">
+          <img src="imagenes/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/rotulosok" target="_blank" aria-label="Facebook">
+          <img src="imagenes/facebook.png" alt="Facebook">
+        </a>
+      </div>
+
+      <p class="rights">© 2025 Rotulación Creativa. Todos los derechos reservados.</p>
     </div>
+  </footer>
 
-    <p class="rights">© 2025 Rotulación Creativa. Todos los derechos reservados.</p>
-  </div>
-</footer>v
-
-  <!-- WHATSAPP -->
+  <!-- WHATSAPP FLOTANTE -->
   <a class="wa-float" href="https://wa.me/34652018096?text=Hola%20quiero%20información" target="_blank" aria-label="WhatsApp">
     <img src="imagenes/whatsapp_logo_icon_181644.png" alt="WhatsApp">
   </a>
 
-  <script src="script.js"></script>
-
-    <!-- LIGHTBOX -->
+  <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
     <button class="lb-close" aria-label="Cerrar">✖</button>
     <button class="lb-prev" aria-label="Anterior">❮</button>
@@ -79,42 +89,45 @@
     <button class="lb-next" aria-label="Siguiente">❯</button>
   </div>
 
+  <!-- SCRIPT LIGHTBOX -->
   <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const images = document.querySelectorAll('.galeria img');
-  const lightbox = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const prevBtn = document.querySelector('.lb-prev');
-  const nextBtn = document.querySelector('.lb-next');
-  const closeBtn = document.querySelector('.lb-close');
-  let index = 0;
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('.galeria img');
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const prevBtn = document.querySelector('.lb-prev');
+      const nextBtn = document.querySelector('.lb-next');
+      const closeBtn = document.querySelector('.lb-close');
+      let index = 0;
 
-  function showImage(i) {
-    lightboxImg.src = images[i].src;
-    lightbox.classList.add('mostrar');
-    index = i;
-  }
+      function showImage(i) {
+        lightboxImg.src = images[i].src;
+        lightbox.classList.add('mostrar');
+        index = i;
+      }
 
-  images.forEach((img, i) => {
-    img.addEventListener('click', () => showImage(i));
-  });
+      images.forEach((img, i) => {
+        img.addEventListener('click', () => showImage(i));
+      });
 
-  closeBtn.addEventListener('click', () => lightbox.classList.remove('mostrar'));
-  lightbox.addEventListener('click', e => { if (e.target === lightbox) lightbox.classList.remove('mostrar'); });
+      closeBtn.addEventListener('click', () => lightbox.classList.remove('mostrar'));
+      lightbox.addEventListener('click', e => {
+        if (e.target === lightbox) lightbox.classList.remove('mostrar');
+      });
 
-  prevBtn.addEventListener('click', e => {
-    e.stopPropagation();
-    index = (index - 1 + images.length) % images.length;
-    showImage(index);
-  });
+      prevBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        index = (index - 1 + images.length) % images.length;
+        showImage(index);
+      });
 
-  nextBtn.addEventListener('click', e => {
-    e.stopPropagation();
-    index = (index + 1) % images.length;
-    showImage(index);
-  });
-});
-</script>
+      nextBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        index = (index + 1) % images.length;
+        showImage(index);
+      });
+    });
+  </script>
 
-</body class="trabajos">
+</body>
 </html>
